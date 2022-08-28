@@ -1,0 +1,322 @@
+body{
+	/*background-color: #F0E68C;*/
+	background-color: #BDB76B;
+}
+
+.container{
+	background-color: white;
+}
+
+.header{
+	height: 350px;
+	width: 100%;
+	margin-bottom: 0px;
+	/*background-image: url(../images/banner.png);*/
+}
+
+.horizontal-list{
+	height: 70px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/*background-color: #EEE8AA;*/
+	/*background-color: #F0E68C;*/
+	background-color: #EEE8AA;
+	display: flex;
+	align-items: center;
+}
+
+.menu1{
+	margin-left: 30px;
+	padding: 7px;
+	font-weight: 500;
+}
+
+.menu1 > a{
+	color: black;
+	font-size: 20px;
+}
+
+.menu1 > a:hover{
+	font-weight: 650;	
+}
+
+.sub-menu{
+	position: absolute;
+	background-color: #f8f8f8;
+	width: 300px;
+	/*	padding: 30px;*/
+	box-shadow: 0 0 5px #828282;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+	z-index: 1;
+/*	top: 15px;
+	left: 0;
+	line-height: 2;
+*/}
+
+.sub-menu ul{
+	margin-bottom: 0;
+}
+
+.sub-menu ul > li > a{
+	margin: 5px;
+	color: black;
+}
+
+.sub-menu > ul > li > a:hover{
+	font-weight: 700;
+}
+
+.menu1:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.row  ul{
+	/*background-color: #FFF8DC;*/
+	background-color: ##212529;
+	border: 1px solid rgba(0,0,0, .125);
+	width: 250px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.ul-first{
+	font-size: 1.25rem; 
+	border-bottom: 1px solid rgba(0,0,0, .125);
+	text-align: center;
+}
+
+.ul-con{
+	font-size: 1rem;
+	margin-top: 10px;
+	/*border-bottom: 1px solid rgba(0,0,0, .125);*/
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.ul-con a{
+	color: black;
+	margin-left: 5px;
+	font-size: 1rem;
+}
+
+.ul-con a:hover{
+	font-weight: 600;
+}
+
+.card-sp{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.img-sp{
+	overflow: hidden;
+}
+
+.card-sp  img{
+	transition: 0.5s;
+}
+
+/*viền*/
+.card-sp:hover{
+	box-shadow: 0 0 5px;
+}
+
+/*phóng to khi ấn vào ảnh*/
+.img-sp:hover img{
+	transform: scale(2);
+}
+
+.cardBody > p{
+	height: 120px;
+}
+
+.cardBody > h5{
+	height: 50px;
+}
+
+
+/*--------sub menu--------*/
+.product-info{
+	background-color: white;
+	text-align: center;
+	padding: 14px 45px;
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	transition: 1s;
+	left: 0;
+	right: 0;
+}
+
+.product-info h3{
+	text-align: center;
+	font-size: 15px;
+}
+
+.product-info h3 a{
+	text-decoration: none;
+	color: #7e7e7e;
+	text-transform: uppercase;
+}
+
+.product-info h3 a:hover{
+	color: red;
+}
+
+.product-info .desc{
+	font-size: 15px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
+}
+
+/*tác động vào icon*/
+.product-info .action a{
+	display: inline-block;
+	margin: 0 5px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #727272;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+}
+
+.product-info .action a:hover{
+	background-color: #00c8c8;
+}
+
+.line-line{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	/*margin-top: 30px;*/
+	margin-bottom: 30px;
+}
+
+.line{
+	width: calc(100%/3);
+	/*background-color: #EEE8AA;*/
+	background-color: #EEE8AA;
+	height: 10px;
+	/*margin: auto;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.font-line{
+	text-align: center;
+	margin: auto;
+	width: 270px;
+}
+
+.slide-sl{
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.note{
+	text-align: center;
+	margin: 10px 10px;
+}
+
+.card-sp{
+	/*margin-top: 50px;*/
+	margin-left: 15px;
+	margin-bottom: 50px;
+}
+
+.card-sp:hover .product-info{
+	bottom: -163px;
+	z-index: 1;
+	box-shadow: 0 0 5px #828282;
+}
+
+.card-sp:hover{
+	box-shadow: 0 0 5px #828282;
+}
+
+.items{
+	display: flex;
+	height: 600px;
+}
+
+.items-left{
+	width: calc(100%/2);
+	/*margin: auto;*/
+	/*background-color: red;*/
+}
+
+.items-left img{
+	width: 400px;
+}
+
+.items-right{
+	display: block;
+	width: calc(100%/2);
+	line-height: 2;
+	/*margin: auto;*/
+}
+
+.card-item{
+	margin: auto;
+}
+
+
+/*-----------*/
+.footer{
+	height: 350px;
+	width: 100%;
+	background-color:#EEE8AA;
+	display: flex;
+}
+
+.footer-content{
+	width: calc(100%/2);
+	border-right: 2px solid rgba(0,0,0, .125);
+}
+
+.f-content{
+	margin: 50px;
+	font-size: 15px;
+	line-height: 3;
+}
+
+.f-content h3{
+	font-weight: 700;
+}
+
+.f-icon{
+	display: flex;
+	font-size: 25px;
+}
+
+.f-icon a{
+	color: #696969;
+}
+
+.f-icon a:hover{
+	color: black;
+}
+
+
+.f-icon a > i{
+	margin: 5px;
+}
+
+@media all and (min-width:  1200px){
+	.container{
+		max-width: 1200px;
+	}
+
+	.btn1{
+		background: #228B22;
+	}
+
+}

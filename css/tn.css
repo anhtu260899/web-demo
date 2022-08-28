@@ -1,0 +1,23 @@
+.start{
+	margin-bottom: 20px;
+}
+.items{
+	display: flex;
+	height: auto;
+	margin-bottom: 0px;
+}
+.items-left{
+	width: auto;
+	height: auto;
+}
+.items-right{
+	margin-left: 30px;
+	width: auto;
+}
+.text{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.end{
+	text-align: right;
+}
